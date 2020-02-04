@@ -14,9 +14,9 @@
 	- Click on the [ clone or Download ] button and Download zip
 	- Unzip the retreived zip file ( duo_python-master.zip )
 	- then goto to the [ duo_python-master\demos\simple ] folder
-	- We assume here that you previously rolled out the PHP lab.
-		- And normally you have generated in your DUO Account all the credentials we need to make this demo works
-	- install needed python modules
+	- We assume here that you previously rolled out the DUO WEB PHP lab.
+		- And normally you have generated in your DUO Account, the credentials you need to make this demo work
+	- Install needed python modules
 		- pip install requirements.txt
 	- Modify the duo.conf file
 	- Then run the web server : 
