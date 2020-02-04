@@ -1,12 +1,12 @@
 # How to setup DUO secondary authentication to your Python web server
 
-# Install a Python Interpreter
+# 0/ Install a Python Interpreter
 
 	- First of all you must have a Python Interpreter installed into your lab laptop.
 	- Go to www.python.org in order to download and install Python on your laptop
 	- Install a version 3.x version ( it will work with python version 2 as well )
 
-# 0/ Download a Simple DUO Python Sample
+# 1/ Download a Simple DUO Python Sample
 
 - Go to DUO Web documentation https://duo.com/docs/duoweb
 - Go to the [ First Steps ] chapter and follow all instruction described in steps 1, 2 and 3
@@ -19,11 +19,11 @@
 	- install needed python modules
 		- pip install requirements.txt
 	- Modify the duo.conf file
-	- then run the web server : 
+	- Then run the web server : 
 		- python server.py
-	- the Web server is ready
+	- The Web server is ready
 
-# 3/ Test it
+# 2/ Test it
 
 	- Open your browser on the following location
 		- http://localhost:8080/?user=myname
