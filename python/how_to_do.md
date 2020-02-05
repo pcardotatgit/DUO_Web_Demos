@@ -15,7 +15,7 @@
 	- Unzip the retreived zip file ( duo_python-master.zip )
 	- then goto to the [ duo_python-master\demos\simple ] folder
 	- We assume here that you previously rolled out the DUO WEB PHP lab.
-		- And normally you have generated in your DUO Account, the credentials you need to make this demo work
+		- And normally if you did it, you have generated in your DUO Account, the credentials ( ikey, skey, akey and host )  you need to make this demo work
 	- Install needed python modules
 		- pip install requirements.txt
 	- Modify the duo.conf file
