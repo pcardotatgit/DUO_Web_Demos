@@ -56,7 +56,7 @@
 		 * if the user and pass are good, then generate a sig_request and
 		 * load up the Duo iframe for secondary authentication
 		 */
-		if(($login=="patrick")&&($pass=="cisco"))
+		if(($login=="patrick")&&($pass=="pssword"))
 		{				
 			$sig_request = Duo\Web::signRequest(IKEY, SKEY, AKEY, $_POST['login']);
 			echo '<form method="POST" id="duo_form">

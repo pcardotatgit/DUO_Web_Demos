@@ -6,7 +6,7 @@
 		$login = trim($_POST['login']);
 		$pass = trim($_POST['pass']);
 
-		if(($login=="patrick")&&($pass=="cisco"))
+		if(($login=="patrick")&&($pass=="password"))
 		{
 			$authenticated=1;	
 			//echo 'YES';

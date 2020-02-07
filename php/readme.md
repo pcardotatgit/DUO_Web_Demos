@@ -7,7 +7,7 @@ If you don't have a web server, install XAMPP .  Easy to find on the INTERNET, a
 Once XAMPP is intalled, for the windows version locate the [ htdocs ] folder and copy [ duo_no ] into it.
 
 - Test your web server : http://localhost/duo_no
-- Authenticate with username = patrick and password = cisco.
+- Authenticate with username = patrick and password = password.
 
 # 1/  How works the authentication without DUO secondary authentication
 
@@ -34,7 +34,7 @@ Once XAMPP is intalled, for the windows version locate the [ htdocs ] folder and
 # 3/ Test it
 
 - Finally open your browser and connect to http://localhost/duo_yes
-- Connect with username = patrick , password = cisco
+- Connect with username = patrick , password = password
 - Then you should see the DUO self enrollment page appearing.
 - Start you mobile device enrollment process
 - Once done,  

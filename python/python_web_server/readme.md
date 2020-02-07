@@ -10,7 +10,7 @@
 - open a shell cmd window into the [ duo_no ] folder and run the application
 	- python app.py
 - Then open your browser to  http://localhost:4000
-- Authenticate with username = patrick , password = cisco
+- Authenticate with username = patrick , password = password
 - Remarks
 	- users are store into a sqlite database : users.bd
 	- you can change the content of this database just by deleting it, and after use the add_users.py script ( open it to understand how to use it )
