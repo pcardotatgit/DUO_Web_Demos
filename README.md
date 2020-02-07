@@ -4,6 +4,6 @@ Here are examples of DUO secondary authentication into PHP and Python Web Server
 
 These codes are proof of concepts which shoud help to understand how it works and how integration can be easily done.
 
-We present 1 PHP and 2 pythons examples.
+You will find here 1 PHP and 2 pythons examples.
 
-In addition to this we present one python DUO client example
+In addition to this there is alose one python DUO client example
