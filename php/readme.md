@@ -14,7 +14,7 @@ Once XAMPP is intalled, for the windows version locate the [ htdocs ] folder and
 - The user authentication is handled by the valid.php file.
 - Open it in the [ duo_no ] folder and have a look at it.  It is very straight forward
 
-## 2/ Add DUO secondary authentication into this php login form
+### 1.1/ Add DUO secondary authentication into this php login form
 
 - Create duo_yes directory into your web server root documentation directory  ( ex : Apache in the htdocs folder )
 - copy all the [ duo_no ] content and paste it into the  [ htdocs/duo_yes ] folder.
@@ -31,7 +31,7 @@ Once XAMPP is intalled, for the windows version locate the [ htdocs ] folder and
 	- AKEY must be an Alphanumerical string with 40 chars minimum. You can define it manually. An choose any strings you want.
 	- copy valid_new.php to the [ htdocs/duo_yes ] folder as valid.php
 
-## 3/ Test it
+## 2/ Test it
 
 - Finally open your browser and connect to http://localhost/duo_yes
 - Connect with username = patrick , password = password
