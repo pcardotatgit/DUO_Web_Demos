@@ -1,6 +1,6 @@
-# How to setup DUO secondary authentication to your web server
+# How to setup DUO secondary authentication into your web server
 
-# 0/ Setup your DUO Web lab
+## 0/ Setup your DUO Web lab
 
 In order to setup your DUO Web lab, you just need to copy all the content of the [ duo_no ] folder into your web server doc directory.
 If you don't have a web server, install XAMPP .  Easy to find on the INTERNET, and very easy to install.
@@ -9,12 +9,12 @@ Once XAMPP is intalled, for the windows version locate the [ htdocs ] folder and
 - Test your web server : http://localhost/duo_no
 - Authenticate with username = patrick and password = password.
 
-# 1/  How works the authentication without DUO secondary authentication
+## 1/  How works the authentication without DUO secondary authentication
 
 - The user authentication is handled by the valid.php file.
 - Open it in the [ duo_no ] folder and have a look at it.  It is very straight forward
 
-# 2/ Add DUO secondary authentication to this php login form
+## 2/ Add DUO secondary authentication into this php login form
 
 - Create duo_yes directory into your web server root documentation directory  ( ex : Apache in the htdocs folder )
 - copy all the [ duo_no ] content and paste it into the  [ htdocs/duo_yes ] folder.
@@ -31,7 +31,7 @@ Once XAMPP is intalled, for the windows version locate the [ htdocs ] folder and
 	- AKEY must be an Alphanumerical string with 40 chars minimum. You can define it manually. An choose any strings you want.
 	- copy valid_new.php to the [ htdocs/duo_yes ] folder as valid.php
 
-# 3/ Test it
+## 3/ Test it
 
 - Finally open your browser and connect to http://localhost/duo_yes
 - Connect with username = patrick , password = password
