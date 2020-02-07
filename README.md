@@ -6,4 +6,4 @@ These codes are proof of concepts which shoud help to understand how it works an
 
 You will find here 1 PHP and 2 pythons examples.
 
-In addition to this there is alose one python DUO client example
+In addition to this there is also one python DUO client example
