@@ -8,12 +8,28 @@
 #CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 #OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 #OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-from flask import Flask
-app = Flask(__name__)
- 
-@app.route("/")
-def index():
-    return "Hello World!"
- 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=4000)
+import time
+import sys
+import RPi.GPIO as GPIO
+sys.path.append('/root/MFRC522-python')
+from mfrc522 import SimpleMFRC522
+
+# Create an object of the class MFRC522
+MIFAREReader = SimpleMFRC522()
+
+# Welcome message
+print("Looking for cards")
+print("Press Ctrl-C to stop.")
+
+reader = SimpleMFRC522()
+
+print("Hold a tag near the reader")
+
+try:
+	while True:
+		id, text = reader.read()
+		print(id)
+		print(text)
+		time.sleep(2)
+except KeyboardInterrupt:
+	GPIO.cleanup()
