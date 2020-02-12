@@ -15,7 +15,7 @@ All these component are very easy to buy and are very cheap
 
 ## Connect the RFID-RC522 and LEDs to the Raspberry PI
 
-<img scr="cabling.png">
+<img src="cabling.png">
 
 ## Install the Raspberry PI OS
 
@@ -64,7 +64,7 @@ At this point you should be able to test the Reader.
 
 copy all python scripts into the [ /home/pi ] folder in your Raspberry PI.
 
-Run the <b>0_read.py</0> script and Scan one of the RFID Tag you got with the RFID-RC522 reader.
+Run the <b>0_read.py</b> script and Scan one of the RFID Tag you got with the RFID-RC522 reader.
 
 - cd /home/pi
 - python 0_read.py
