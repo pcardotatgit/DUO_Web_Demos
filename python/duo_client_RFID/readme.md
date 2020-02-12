@@ -15,13 +15,13 @@ All these component are very easy to buy and are very cheap
 
 ## Connect the RFID-RC522 and LEDs to the Raspberry PI
 
-<img scr="cabling.npg">
+<img scr="cabling.png">
 
 ## Install the Raspberry PI OS
 
-There is a lot of tutorials on the INTERNET which explains how to install raspbian OS into a SDCard. I let you find one.
+There is a lot of tutorials on the INTERNET which explain how to install raspbian OS into a SD Card. I let you use one of these.
 
-And here are the important steps to go thru after having installed the OS on yoyur Raspberry PI
+And here are the important steps to go thru after having installed the OS on your Raspberry PI
 
 ### Enable SPI
 
@@ -46,7 +46,7 @@ Check if the SPI module is loaded
 
 You should see something like :
 
- spidev			16384
+ spidev			16384<br>
  spi_bcm2835 	16384
  
 ### Install needed python package 
@@ -64,7 +64,7 @@ At this point you should be able to test the Reader.
 
 copy all python scripts into the [ /home/pi ] folder in your Raspberry PI.
 
-Run the 0_read.py script and Scan one of the RFID Tag you got with the RFID-RC522 reader.
+Run the <b>0_read.py</0> script and Scan one of the RFID Tag you got with the RFID-RC522 reader.
 
 - cd /home/pi
 - python 0_read.py
@@ -73,7 +73,7 @@ You should get a result. You will see the TAG ID.
 
 If you see the TAG ID, then you are ready to go
 
-Run the 1_write.py script  and then write a user name into your RFID Tag, and use the same username as the one you use into your DUO account.
+Run the <b>1_write.py script</b>  and then write a user name into your RFID Tag, and use the same username as the one you use into your DUO account.
 
 - python 1_write.py
 
@@ -118,12 +118,12 @@ Run the script :
 
 - <b>python 3_duo_rfid.py</b>
 
-And CTRL+C to exit
+And <b>CTRL+C</b> to exit
 
-When the script starts the Blue Led moves to ON ( waiting for TAGs )
-When a TAG is scanned , the led blinks PINK and stays PINK during DUO MFA. DUO MFA is triggered and you should get the Pushed Authentication message on your Phone.
-If you accept the Authentication the LED will first blink Green and will stay Green ON a few seconds before moving back to Blue ON ( waiting for new scans )
-If you reject the Authentication the LED will be Red instead of Green.
+- When the script starts the Blue Led moves to ON ( waiting for TAGs )
+- When a TAG is scanned , the led blinks PINK and stays PINK during DUO MFA. DUO MFA is triggered and you should get the Pushed Authentication message on your Phone.
+- If you accept the Authentication the LED will first blink Green and will stay Green ON a few seconds before moving back to Blue ON ( waiting for new scans )
+- If you reject the Authentication the LED will be Red instead of Green.
 
 Here we go !!
 
