@@ -25,24 +25,24 @@ And here are the important steps to go thru after having installed the OS on you
 
 ### Enable SPI
 
-- sudo raspi-config
+- <b>sudo raspi-config</b>
 
 And enable SPI under the [ Interfacing Options ] section.
 
 ### Upgrade and Update
 
-- sudo apt-get update
-- sudo apt-get upgrade 
+- <b>sudo apt-get update</b>
+- <b>sudo apt-get upgrade </b>
 
 ### Install GIT client and Python PIP
 
-- sudo apt-get -y install git python-pip
+- <b>sudo apt-get -y install git python-pip</b>
 
 ### Install RFID Software
 
 Check if the SPI module is loaded 
 
-- lsmod | grep spi
+- <b>lsmod | grep spi</b>
 
 You should see something like :
 
@@ -51,13 +51,13 @@ You should see something like :
  
 ### Install needed python package 
  
-- sudo apt-get install python2.7-dev
+- <b>sudo apt-get install python2.7-dev</b>
 
 ### Download RC522 Python Library
-
+<b>
 - cd /home/pi
 - git clone https://github.com/pimylifeup/MFRC522-python.git
-
+</b>
 ### Test the reader
 
 At this point you should be able to test the Reader.
@@ -65,17 +65,17 @@ At this point you should be able to test the Reader.
 copy all python scripts into the [ /home/pi ] folder in your Raspberry PI.
 
 Run the <b>0_read.py</b> script and Scan one of the RFID Tag you got with the RFID-RC522 reader.
-
+<b>
 - cd /home/pi
 - python 0_read.py
-
+</b>
 You should get a result. You will see the TAG ID.
 
 If you see the TAG ID, then you are ready to go
 
 Run the <b>1_write.py script</b>  and then write a user name into your RFID Tag, and use the same username as the one you use into your DUO account.
 
-- python 1_write.py
+- <b>python 1_write.py</b>
 
 But at this point you can write anything.
 
@@ -85,7 +85,7 @@ Check that you succeeded to write your username into the tags.  ( Run again the 
 
 Let's see an example of loop which waits for tags to be scanned, and which will output cards IDs of scanned TAGs and which will wait again for another TAG tobe scanned
 
-- python 2_nfc_read_loop.py
+- <b>python 2_nfc_read_loop.py</b>
 
 CTRL+C to exit.
 
@@ -98,7 +98,7 @@ A user scans his RFID Tag, and then he is definitely authenticated thanks to DUO
 
 ### Import the duo_client python module
 
-- pip install duo_client
+- <b>pip install duo_client</b>
 
 Edit the script named python <b>3_duo_rfid.py</b>
 
