@@ -61,7 +61,7 @@ If not :  =>  <b>sudo raspi-config </b>
 
 ### Download RC522 Python Library
 <b>
-- cd /home/pi
+- cd /home/pi<br>
 - git clone https://github.com/pimylifeup/MFRC522-python.git
 </b>
 <br>
