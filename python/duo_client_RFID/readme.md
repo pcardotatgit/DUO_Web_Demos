@@ -67,7 +67,7 @@ If not :  =>  <b>sudo raspi-config </b>
 
 At this point you should be able to test the Reader.
 
-copy all python scripts into the [ /home/pi ] folder in your Raspberry PI.
+copy all python scripts into the [ /home/pi ] folder into your Raspberry PI.
 
 Run the <b>0_read.py</b> script and Scan one of the RFID Tag you got with the RFID-RC522 reader.
 <b>
@@ -84,7 +84,7 @@ Run the <b>1_write.py script</b>  and then write a user name into your RFID Tag,
 
 But at this point you can write anything.
 
-Check that you succeeded to write your username into the tags.  ( Run again the 0_read.py script )
+Check that you succeeded to write your username into the tag.  ( Run again the 0_read.py script )
 
 ### RFID Tag reading loop example
 
@@ -97,9 +97,9 @@ CTRL+C to exit.
 OK...We are ready to add DUO MFA to this.
 
 ## Setup the DUO MFA Demo
-The goal now is to, on top the previous steps, to setup a DUO Client demo.
+The goal now is , on top the previous steps, to setup a DUO Secondary Authentication.
 
-A user scans his RFID Tag, and then he is definitely authenticated thanks to DUO MFA Authentication.
+Result must be : A user scans his RFID Tag, and then he receives a pushed DUO Secondary Authentication on his DUO Mobile. And then he must accept or reject.
 
 ### Import the duo_client python module
 
