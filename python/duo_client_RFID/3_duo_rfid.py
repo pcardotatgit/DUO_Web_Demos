@@ -82,8 +82,8 @@ def leds_init():
 def set_gpio():
 	GPIO.setmode(GPIO.BOARD)
 	GPIO.setwarnings(False) # Ignore warning for now
+	GPIO.setup(3, GPIO.OUT, initial=GPIO.LOW) # Set pin 3 to be an output pin and set initial value to low (off) red = deny
 	GPIO.setup(5, GPIO.OUT, initial=GPIO.LOW) # Set pin 5 to be an output pin and set initial value to low (off)  green = allow 
-	GPIO.setup(3, GPIO.OUT, initial=GPIO.LOW) # Set pin 3 to be an output pin and set initial value to low (off) red = red
 	GPIO.setup(7, GPIO.OUT, initial=GPIO.HIGH) # Set pin 7 to be an output pin and set initial value to high (on) blue = ready
 
 def blink_led(LED_PIN,number_of_blinks):
@@ -125,7 +125,7 @@ if __name__ == '__main__':
 				sleep(1) # Sleep for 1 second
 				GPIO.output(3, GPIO.LOW) # Turn on		
 				leds_init()
-			else: #fall back to PIN code using keypad
+			else: #fall back to another authentication method
 				print('Fist login failed !')
 				GPIO.output(3, GPIO.HIGH) # Turn on
 				sleep(2) # Sleep for 2 second
