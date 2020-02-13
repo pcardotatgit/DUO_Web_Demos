@@ -119,7 +119,7 @@ if __name__ == '__main__':
 				GPIO.output(3, GPIO.LOW) # Turn on		
 				leds_init()
 			elif r=='enroll':
-				print('User not know by DUO. This is a New user enrolement process to be sent to him')
+				print('User not know by DUO. This is a New user. Enrolement process to be sent to him')
 				blink_led(3,5)	
 				GPIO.output(3, GPIO.HIGH) # Turn on
 				sleep(1) # Sleep for 1 second
@@ -129,5 +129,5 @@ if __name__ == '__main__':
 				print('Fist login failed !')
 				GPIO.output(3, GPIO.HIGH) # Turn on
 				sleep(2) # Sleep for 2 second
-	finally:
+	except KeyboardInterrupt:
 		GPIO.cleanup()
