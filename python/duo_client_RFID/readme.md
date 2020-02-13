@@ -38,6 +38,10 @@ And enable SPI under the [ Interfacing Options ] section.
 
 - <b>sudo apt-get -y install git python-pip</b>
 
+### Install SPI Supporting Libraries
+
+- <b>sudo apt-get install python-spidev python3-spidev</b>
+
 ### Install RFID Software
 
 Check if the SPI module is loaded 
