@@ -11,7 +11,7 @@
 import time
 import sys
 import RPi.GPIO as GPIO
-sys.path.append('/root/MFRC522-python')
+sys.path.append('/home/pi/MFRC522-python')
 from mfrc522 import SimpleMFRC522
 
 # Create an object of the class MFRC522
