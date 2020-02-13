@@ -49,6 +49,8 @@ You should see something like :
  spidev			16384<br>
  spi_bcm2835 	16384
  
+If not :  =>  <b>sudo raspi-config </b>
+
 ### Install needed python package 
  
 - <b>sudo apt-get install python2.7-dev</b>
@@ -58,6 +60,7 @@ You should see something like :
 - cd /home/pi
 - git clone https://github.com/pimylifeup/MFRC522-python.git
 </b>
+<br>
 ### Test the reader
 
 At this point you should be able to test the Reader.
@@ -129,4 +132,4 @@ Here we go !!
 
 <img src="demo.png">
 
-Remark : the script fails if you try to scan a tags without username... I let you fix that
+Remark : the script fails if you try to scan a tags wich doesn't have any username... I let you fix that
