@@ -134,4 +134,4 @@ Here we go !!
 
 <img src="demo.png">
 
-Remark : the script fails if you try to scan a tags wich doesn't have any username... I let you fix that
+Remark : the script fails if you try to scan tags wich don't have any username... I let you fix that
