@@ -99,7 +99,7 @@ OK...We are ready to add DUO MFA to this.
 ## Setup the DUO MFA Demo
 The goal now is , on top the previous steps, to setup a DUO Secondary Authentication.
 
-Result must be : A user scans his RFID Tag, and then he receives a pushed DUO Secondary Authentication on his DUO Mobile. And then he must accept or reject.
+Result must be : A user scans his RFID Tag, and then he receives a pushed DUO Secondary Authentication Confirmation Message on his DUO Mobile. And then he must accept or reject.
 
 ### Import the duo_client python module
 
