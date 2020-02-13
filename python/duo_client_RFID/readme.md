@@ -61,6 +61,8 @@ If not :  =>  <b>sudo raspi-config </b>
 - git clone https://github.com/pimylifeup/MFRC522-python.git
 </b>
 <br>
+
+
 ### Test the reader
 
 At this point you should be able to test the Reader.
