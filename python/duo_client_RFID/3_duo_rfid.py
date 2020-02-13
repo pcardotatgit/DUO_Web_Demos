@@ -126,7 +126,7 @@ if __name__ == '__main__':
 				GPIO.output(3, GPIO.LOW) # Turn on		
 				leds_init()
 			else: #fall back to another authentication method
-				print('Fist login failed !')
+				print('First login failed !')
 				GPIO.output(3, GPIO.HIGH) # Turn on
 				sleep(2) # Sleep for 2 second
 	except KeyboardInterrupt:
