@@ -127,4 +127,6 @@ And <b>CTRL+C</b> to exit
 
 Here we go !!
 
+<img scr="demo.png">
+
 Remark : the script fails if you try to scan a tags without username... I let you fix that
