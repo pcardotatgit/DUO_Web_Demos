@@ -139,3 +139,10 @@ Here we go !!
 <img src="demo.png">
 
 Remark : the script fails if you try to scan tags wich don't have any username... I let you fix that
+
+# Credit and References
+
+<u>
+<li>https://github.com/gve-sw/DUO_RFID_MFA  - ( Thanks Abdelbar to what you did !! )</li> 
+<li>https://duo.com/docs/duoweb</li>
+</ul>
